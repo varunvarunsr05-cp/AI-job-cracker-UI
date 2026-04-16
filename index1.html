@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>AI Job Prep Platform</title>
+
+    <link rel="stylesheet" href="style1.css">
+</head>
+
+<body>
+
+    <!-- 🔥 NAVBAR -->
+    <nav class="navbar">
+        <div class="logo">VARUN</div>
+
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+
+        <button class="cta-btn" onclick="scrollToMain()">Try Now</button>
+    </nav>
+
+    <!-- 🔥 HERO SECTION -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Crack Your Dream Job with AI 🚀</h1>
+            <p>Resume analysis + AI interview + job matches</p>
+            <button class="hero-btn" onclick="scrollToMain()">Get Started</button>
+        </div>
+    </section>
+
+    <!-- 🔥 FEATURES SECTION -->
+    <section class="features">
+
+        <h2 class="section-title">Features</h2>
+
+        <div class="feature-container">
+
+            <div class="card">
+                <div class="icon">📄</div>
+                <h3>Resume Analyzer</h3>
+                <p>Get ATS score and improve your resume instantly</p>
+            </div>
+
+            <div class="card">
+                <div class="icon">🤖</div>
+                <h3>AI Interview Chat</h3>
+                <p>Practice interviews with smart AI responses</p>
+            </div>
+
+            <div class="card">
+                <div class="icon">💼</div>
+                <h3>Job Suggestions</h3>
+                <p>Find jobs matching your skills and profile</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- 🔥 RESUME SECTION -->
+    <section class="resume-section" id="resume">
+
+        <h2 class="section-title">Resume Analyzer</h2>
+
+        <div class="resume-box">
+
+            <!-- Upload OR Text -->
+            <input type="file" id="resumeFile" />
+            <p class="or-text">OR</p>
+            <textarea id="resumeText" placeholder="Paste your resume here..."></textarea>
+
+            <button class="analyze-btn" onclick="analyzeResume()">Analyze Resume</button>
+
+            <!-- Result Box -->
+            <div id="resultBox" class="result-box">
+                <!-- Results will appear here -->
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- 🔥 CHATBOT SECTION -->
+    <section class="chat-section">
+
+        <h2 class="section-title">AI Interview Chat</h2>
+
+        <div class="chat-container">
+
+            <!-- Messages -->
+            <div id="chatBox" class="chat-box"></div>
+
+            <!-- Input -->
+            <div class="chat-input">
+                <input type="text" id="userInput" placeholder="Ask something..." />
+                <button onclick="sendMessage()">Send</button>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- 🔥 JOB SECTION -->
+    <section class="job-section">
+
+        <h2 class="section-title">Job Suggestions</h2>
+
+        <div id="jobContainer" class="job-container">
+            <!-- Job cards will come here -->
+        </div>
+    </section>
+
+    <!-- 🔥 CONTACT SECTION -->
+    <section class="contact-section" id="contact">
+
+        <h2 class="section-title">Contact Me</h2>
+
+        <div class="contact-container">
+
+            <input type="text" placeholder="Your Name" id="name" />
+            <input type="email" placeholder="Your Email" id="email" />
+            <textarea placeholder="Your Message" id="message"></textarea>
+
+            <button onclick="sendMessageForm()">Send Message</button>
+
+        </div>
+
+    </section>
+
+    <!-- 🔥 FOOTER -->
+    <footer class="footer">
+
+        <h3>VARUN</h3>
+
+        <div class="footer-links">
+            <a href="#">Home</a>
+            <a href="#">Features</a>
+            <a href="#">Contact</a>
+        </div>
+
+        <div class="socials">
+            <a href="#">LinkedIn</a>
+            <a href="#">GitHub</a>
+            <a href="#">Twitter</a>
+        </div>
+
+        <p class="copyright">© 2026 All rights reserved</p>
+
+    </footer>
+
+    <script src="script1.js"></script>
+</body>
+
+</html>
