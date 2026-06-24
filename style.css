@@ -557,3 +557,260 @@ textarea {
     text-decoration: none;
     color: #94a3b8;
 }
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+/* TABLETS */
+@media (max-width: 992px) {
+
+  .navbar {
+    padding: 15px 25px;
+  }
+
+  .nav-links {
+    gap: 20px;
+  }
+
+  .hero-content h1 {
+    font-size: 40px;
+  }
+
+  .features {
+    padding: 60px 20px;
+  }
+
+  .feature-container,
+  .job-container {
+    gap: 20px;
+  }
+
+  .card,
+  .job-card {
+    width: 100%;
+    max-width: 320px;
+  }
+}
+
+
+/* MOBILE */
+@media (max-width: 768px) {
+
+  /* NAVBAR */
+  .navbar {
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px;
+    text-align: center;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .cta-btn {
+    width: 100%;
+    max-width: 250px;
+  }
+
+  /* HERO */
+  .hero {
+    height: auto;
+    min-height: 80vh;
+    padding: 100px 20px 60px;
+  }
+
+  .hero-content h1 {
+    font-size: 34px;
+    line-height: 1.2;
+  }
+
+  .hero-content p {
+    font-size: 16px;
+  }
+
+  .hero-btn {
+    width: 100%;
+    max-width: 280px;
+  }
+
+  /* FEATURES */
+  .features {
+    padding: 50px 15px;
+  }
+
+  .section-title {
+    font-size: 28px;
+  }
+
+  .feature-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 350px;
+  }
+
+  /* RESUME */
+  .resume-box {
+    width: 100%;
+  }
+
+  textarea {
+    height: 140px;
+  }
+
+  .analyze-btn {
+    width: 100%;
+  }
+
+  /* CHAT */
+  .chat-container {
+    width: 100%;
+  }
+
+  .chat-box {
+    height: 250px;
+  }
+
+  .chat-input {
+    flex-direction: column;
+  }
+
+  .chat-input button {
+    width: 100%;
+  }
+
+  .message {
+    max-width: 90%;
+  }
+
+  /* JOBS */
+  .job-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .job-card {
+    width: 100%;
+    max-width: 350px;
+  }
+
+  /* CONTACT */
+  .contact-container {
+    width: 100%;
+  }
+
+  .contact-container button {
+    width: 100%;
+  }
+
+  /* FOOTER */
+  .footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .socials {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  /* GLOW EFFECTS */
+  body::before,
+  body::after {
+    width: 250px;
+    height: 250px;
+    filter: blur(100px);
+  }
+
+  .orb {
+    width: 220px;
+    height: 220px;
+    filter: blur(80px);
+  }
+
+  .cursor-glow {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+
+/* SMALL PHONES */
+@media (max-width: 480px) {
+
+  .logo {
+    font-size: 18px;
+  }
+
+  .nav-links a {
+    font-size: 14px;
+  }
+
+  .hero-content h1 {
+    font-size: 28px;
+  }
+
+  .hero-content p {
+    font-size: 14px;
+  }
+
+  .section-title {
+    font-size: 24px;
+  }
+
+  .card,
+  .job-card {
+    padding: 20px;
+  }
+
+  .icon {
+    font-size: 32px;
+  }
+
+  .chat-box {
+    height: 220px;
+  }
+
+  .footer {
+    padding: 30px 15px;
+  }
+
+  .footer h3 {
+    font-size: 18px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+}
+
+
+/* EXTRA SAFETY */
+img,
+video,
+canvas,
+iframe {
+  max-width: 100%;
+  height: auto;
+}
+
+input,
+textarea,
+button {
+  max-width: 100%;
+}
+
+body {
+  overflow-x: hidden;
+}
